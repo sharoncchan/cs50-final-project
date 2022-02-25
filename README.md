@@ -7,13 +7,13 @@ My project is an address book web application which provides a platform for user
 
 Technologies used:
 
-- Frontend
+Frontend
  - HTML
  - CSS
  - Javascript
  - Bootstrap
 
-- Backend
+Backend
  - Flask (Python)
  - Sqlite3
 
@@ -24,9 +24,9 @@ The user can register for an account. During registration the user need to enter
 - Name
 - Password: There are certain requirements to be fulfilled and the text below indicate the live view of which conditions are fulfilled
 - Password(again): User to retype the password. This re-typed password will be matched with the password
-- email
+- Email
 
-After the user has registered for an account and has successfully logged in, the user can accss the homepage which shows the contacts in their address book and details. They can search for the name by using the search button and the table will dsiplay the details of the name accordingly
+After the user has registered for an account and has successfully logged in, the user can access the homepage which shows the contacts in their address book and details. They can search for the name by using the search button and the table will dsiplay the address details of the name the user is searching for accordingly
 
 ### Sessions
 
@@ -34,7 +34,7 @@ The webpage uses sessions to confirm that user is registered.
 
 ### Database
 
-Database stores all users details and the conatcts of each users
+Database stores all users details and the contacts of each users
 
 
 Each of the files contains:
