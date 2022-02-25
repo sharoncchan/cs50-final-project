@@ -1,0 +1,99 @@
+
+
+main
+{
+    /* Scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* Center contents */
+    text-align: center;
+}
+
+
+
+
+
+
+
+main .form-control
+{
+    /* Center form controls */
+
+    display: inline-block;
+
+
+    /* Override Bootstrap's 100% width for form controls */
+    width: auto;
+
+
+}
+
+
+#message
+{
+    display : none;
+    position: relative;
+    padding: 10px;
+    margin-top:10px;
+}
+
+#message p
+{
+    padding: 10px 35px;
+    font-size:16px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid{
+    color: green;
+}
+
+.valid:before:
+{
+    position: relative;
+    left: -35px;
+    content:"✔";
+
+}
+
+
+.invalid
+
+{
+    color: red;
+}
+
+.invalid:before:
+{
+    position: relative;
+    left: -35px;
+    content:"✖";
+
+}
+
+.form-group
+{
+    margin-top:30px;
+}
+
+table {
+    margin-top:100px;
+    display: table;
+    border-collapse: collapse;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: blue;
+}
+
+.fa fa-search
+{
+    color: white;
+}
+
+
+.form-group search
+{
+    float: left;
+}
+
+

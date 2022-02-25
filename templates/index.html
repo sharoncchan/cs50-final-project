@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    HomePage
+{% endblock %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+{% block main %}
+
+    <div class="header">
+       <h3> Your Address Book</h3>
+    </div>
+      <a href="/new" class="btn btn-info font-weight-bold float-right">Add Address </a>
+
+     <form action="/search" method="post">
+         <div class="form-group search float-left">
+             <input type="text" placeholder="Search.." name="search">
+
+         <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+        </div>
+
+    </form>
+
+
+        <table class="table tablestriped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for contact in contacts %}
+            <tr>
+                <td class="text-start">{{contact.name}}</td>
+                <td class="text-start">{{contact.address}}</td>
+                <td class="text-end">{{contact.email}}</td>
+                <td class="text-end">{{contact.number}}</td>
+            </tr>
+            {% endfor %}
+
+
+
+{% endblock %}
